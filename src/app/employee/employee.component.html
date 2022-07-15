@@ -1,0 +1,118 @@
+<div class="container-fluid g-0 p-2">
+
+    <div class="row g-0">
+
+        <div class="col-md-2 d-flex justify-content-center align-items-center">
+
+            <img src="../../assets/Images/{{employee.profile}}" 
+            alt="Profile Image" 
+            class="profile">
+
+        </div>
+
+        <div class="col ps-2">
+
+            <div class="row g-0">
+
+                <div class="col-md-10">
+                    <span class="name">{{employee.firstname | titlecase}} {{employee.lastname | titlecase}} </span>
+
+                </div>
+
+                <div class="col-md-2 d-flex justify-content-center align-items-center">
+
+                    <div class="btn-group" role="group">
+                        <button 
+                        type="button" 
+                        class="btn btn-outline-primary"
+                        (click)="editEmployeeClicked()"
+                        >Editar</button>
+
+
+                        <button 
+                        type="button" 
+                        class="btn btn-outline-danger"
+                        (click)="deleteEmployeeClicked()"
+                        > Deletar</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row g-0 mt-3">
+
+                <div class="col-md">
+
+                    <table class="table table-hover mx-auto">
+
+                        <thead class="text-center fs-5 fst-italic text-secondary">
+
+                            <tr>
+                                <td colspan="2"> Informações Pessoais: </td>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td> Data de Nascimento</td>
+                                <td> {{employee.birthdate}} </td>
+                            </tr>
+
+                            <tr>
+                                <td>Genero</td>
+                                <td> {{employee.gender == 'm'? "Masculino" : "Femainino"}} </td>
+                            </tr>
+
+                            <tr>
+                                <td>Escolaridade</td>
+                                <td> {{employee.education | titlecase}}</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+                <div class="col">
+
+                    <table class="table table-hover mx-auto" >
+                        <thead  class="text-center fs-5 fst-italic text-secondary" >
+                            <tr>
+                                <td colspan="2"> Detalhes Empregaticios:</td>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>Company</td>
+                                <td>{{employee.company | titlecase}} </td>
+                            </tr>
+
+                            <tr>
+                                <td>Experiência</td>
+                                <td>{{employee.jobExperience}} anos</td>
+                            </tr>
+
+                            <tr>
+                                <td>Salário</td>
+                                <td> R$ {{employee.salary}}</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+                
+            </div>
+            
+        </div>
+
+
+    </div>
+
+
+</div>
