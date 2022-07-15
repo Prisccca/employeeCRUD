@@ -13,8 +13,8 @@ Implementações futuras: Icones.
 
 Imagem  01 : visão geral 
 
-![alt](./employeeCRUD/src/assets/Images/vis%C3%A3o-geral.png)
+![alt image](./employeeCRUD/src/assets/Images/vis%C3%A3o-geral.png)
 
 Imagem 02 : caixa de dialogo
-![alt](./employeeCRUD/src/assets/Images/caixa-dialogo.png)
+![alt image](./employeeCRUD/src/assets/Images/caixa-dialogo.png)
 
